@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+</head>
+<script>
+function QShow(qid, correct) {
+   var x = document.getElementById(qid);
+   if (correct == 'yes') {
+      x.style.color = "green";
+   }
+   else {
+      x.style.color = "blue";
+   }
+}
+</script>
+    <body>
+    <style> 
+        h2 {font: Times New Roman} h2 {background-color: rgb(255,255,0);}</style>
+    <h1> My Cat Murphy </h1> 
+    <h2> <i>He's quite energetic!</i> </h2>
+    <p>My cat Murphy is a white and orange cat who is about six years old now.
+   </p> 
+    <p>When he was younger, he'd love to wait behind corners and <b>ambush</b> me. </p>
+    <p>Here's the Wikipedia page for cats ---> <a href="https://en.wikipedia.org/wiki/Cat"> Wiki </a></p>
+    <p id="Q1"> Change text color!
+<button type="button"onclick="QShow('Q1','yes')">Green</button>
+<button type="button" onclick="QShow('Q1','no')">Blue</button>
+        </p> 
+
+    </body>
+</html>
